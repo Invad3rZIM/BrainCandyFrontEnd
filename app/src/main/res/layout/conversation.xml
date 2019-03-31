@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/secret_layout"
+
+    android:background="#FFFFFF"
+    >
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:id="@+id/card"
+
+        android:background="#ACF39D">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#ACF39D">
+
+
+            <ImageView
+                android:id="@+id/signature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/icon0"/>
+
+        <TextView
+            android:id="@+id/preview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ACF39D"
+            android:textColor="#773344"
+
+            android:fontFamily="sans-serif-condensed"
+            android:gravity = "center"
+
+            android:textSize="19dp"
+
+            android:text="this is a preview\nhey i'm testing stuff out"
+            android:layout_toRightOf="@+id/signature"
+
+            />
+
+
+        <TextView
+            android:id="@+id/secret"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ACF39D"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="#ACF39D"
+            android:textSize="0dp"
+            android:text="testing"
+            android:layout_below="@+id/preview"
+            />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

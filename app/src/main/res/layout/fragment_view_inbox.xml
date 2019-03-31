@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:windowSoftInputMode="stateAlwaysHidden"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateUserActivity"
+    >
+
+    <TextView
+        android:id="@+id/refresh"
+        android:text="CONVERSATIONS"
+
+        android:padding="10dp"
+        android:fontFamily="sans-serif-condensed"
+        android:background="#E85F5C"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="50dp"
+        android:textSize="28dp"
+        android:gravity="center"
+        android:layout_gravity="top"
+        android:layout_marginBottom="10dp"
+
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/refresh">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</RelativeLayout>
