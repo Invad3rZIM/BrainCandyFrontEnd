@@ -6,47 +6,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreateUserActivity"
+    tools:context=".Activities.DriverActivity"
     >
 
-    <Button
-        android:id="@+id/sendchat"
-        android:text="Share Cloud!"
-        android:textSize="30dp"
-        android:clickable="true"
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#FFD275">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD275">
+    <Button
+        android:id="@+id/sendchat"
+        android:text="+"
+        android:textSize="30dp"
+        android:textColor="#283D3B"
 
+        android:layout_marginLeft="4dp"
+
+
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFD275"
+        android:layout_alignParentRight="true"
         android:gravity="center"
-        android:layout_gravity="top"
+        android:layout_gravity="bottom" />
+
+        </RelativeLayout>
 
 
-        android:padding="10dp"
-        android:fontFamily="sans-serif-condensed"
-        android:background="#FF8A5B"
-        android:layout_marginBottom="10dp"
+    </android.support.v7.widget.CardView>
 
-        />
 
 
     <EditText
+
+        android:inputType="textNoSuggestions"
         android:id="@+id/secret"
+        android:hint="What's on your mind?"
+        android:textColor="#283D3B"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:textSize="14dp"
+        android:gravity="top"
+
+        android:minHeight="50dp"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:gravity="top|center_horizontal"
-        android:inputType="textMultiLine"
-        android:lines="20"
-        android:minLines="3"
-        android:scrollHorizontally="false"
-        android:scrollbars="vertical"
-        android:layout_below="@+id/sendchat"
-
-        android:textSize="24dp"
-
-        android:padding="24dp"
-        android:fontFamily="sans-serif-c/ondensed"
-        android:hint="What's on your mind?"
-        android:background="#6DD3CE"
+        android:lines ="5"
+        android:minLines="1"
+        android:scrollbars="none"
+        android:maxLines="4"
+        android:layout_below="@+id/card"
         />
 
 

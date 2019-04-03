@@ -6,8 +6,15 @@
     <color name="colorConversation">#eaebec</color>
     <color name="colorConversationBorder">#8c93a6</color>
     <color name="outgoingMesage">#d60620</color>
-    <color name="bg">#ffffff</color>
+    <color name="bg">#FFD275</color>
+    <color name="headerbackground">#FFD275</color>
 
     <color name="received">#DB5A42</color>
     <color name="sent">#FFD275</color>
+
+
+    <color name="rchatbg">#FF3A3A</color>
+    <color name="schatbg">#000353</color>
+    <color name="rchattext">#DB5A42</color>
+    <color name="schattext">#FFD275</color>
 </resources>

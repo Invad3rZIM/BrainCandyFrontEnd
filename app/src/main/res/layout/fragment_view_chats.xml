@@ -4,37 +4,33 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-
-    android:windowSoftInputMode="stateAlwaysHidden"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CreateUserActivity"
+    android:layout_height="fill_parent"
+    tools:context=".Activities.DriverActivity"
     >
-
+    <RelativeLayout
+        android:layout_height="fill_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/card"
+        >
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
-        android:layout_above="@+id/sendtext"
+        android:layout_above="@+id/input"
+        android:windowSoftInputMode="adjustResize"
        >
 
     </android.support.v7.widget.RecyclerView>
 
-    <LinearLayout
-        android:id="@+id/sendtext"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:minHeight="48dp"
-        android:background="#DDE7C7"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
 
-
-        android:layout_alignParentBottom="true">
-
+        <LinearLayout
+            android:id="@+id/input"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"
+             >
         <EditText
             android:id="@+id/message"
             android:hint="Enter message"
@@ -54,24 +50,50 @@
             android:lines ="5"
             android:minLines="1"
             android:scrollbars="none"
+            android:imeOptions="actionSend"
+
+            android:inputType="textNoSuggestions"
             android:maxLines="4"
 
         />
 
-        <Button
-            android:id="@+id/send"
-            android:text="SEND"
-            android:textColor="#283D3B"
+        </LinearLayout>
+    </RelativeLayout>
 
-            android:textSize="14dp"
-            android:clickable="true"
-            android:layout_width="64dp"
-            android:layout_height="fill_parent"
-            android:background="#6DD3CE"
-            android:layout_weight=".15"
-            android:gravity="center"
-            android:layout_gravity="bottom" />
 
-    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFD275"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFD275">
+            <Button
+                android:id="@+id/sendchat"
+                android:text="Conversation"
+                android:textColor="#283D3B"
+
+                android:layout_marginLeft="4dp"
+
+                android:textSize="20dp"
+
+                android:clickable="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:layout_gravity="bottom" />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
 
 </RelativeLayout>
